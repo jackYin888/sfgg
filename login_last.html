@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style>
+		/*=============login start===============*/
+		.login-bg{
+			background: #eff3f6;
+		}
+		.login-navbar-nav-ml{
+			margin-left:50px;
+		}
+		.login-content{
+			padding-left:20%;
+			margin-top:40px;
+			background: #fff;
+			
+		}
+		/*
+		.login-content-left{
+			padding-left:20%;
+		}
+		*/
+		.login-content-title{
+			height:40px;
+			
+			padding-bottom:35px;
+		}
+		.login-content-right h2,.login-content-title h2{
+			display:inline;
+			font-size:20px;
+			line-height:40px;
+
+		}
+		.login-content-right{
+			padding:10px;
+		}
+		.login-content-title span{
+			padding-top: 8px;
+			font-size:14px;
+			float:right;
+		}
+		/*=============login end===============*/
+		/*===============login content start===============*/
+		.login-input-group{
+			position: relative;
+			width:80%;
+			border-bottom:1px solid #eff3f6;
+			
+
+
+		}
+		.login-input-addon{
+			position:relative;
+			background:#fff;
+			border: none;
+			
+		}
+		.login-input-group input{
+			width:100%;
+			outline:none;
+			border:none;
+			padding:3px 12px;
+			background: #fff;
+		}
+		.login-input-pt{
+			padding-top:30px;
+			padding-bottom: 1px;
+
+		}
+		.login-btn{
+			margin-top:30px;
+			width:80%;
+		}
+
+		.login-third-party{
+			padding-top:30px;
+			text-align: center;
+		}
+		
+			
+		.login-third-party li{
+
+			border:none;
+		}
+		.login-error{
+			position:absolute;
+			display: block;
+			
+			color:red;
+		}
+		/*==============login content end==============*/
+		/*===============login footer==================*/
+		.login-footer{
+			
+			text-align: center;
+			background:#eff3f6;
+			margin-top:40px;
+			padding-top:10px;
+		 	
+		 	
+		 	
+		}
+		.login-footer>span{
+
+			color:gray;
+			font-size: 14px;
+		}
+		.login-active{
+			border-bottom:1px solid #31B0D5;
+		}
+		.login-warning{
+			border-bottom:1px solid red;
+		}
+		/*=========login footer end==================*/
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default login-bg"> <!--nav start-->
+		  <div class="container">                       <!--container start-->
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header"> <!--navbar-header start-->
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="login-logo" href="#">
+				<img alt='logo' src='images/logo.jpg'/>
+		      </a>
+		    </div><!--navbar-header end-->
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		       <ul class="nav navbar-nav login-navbar-nav-ml">
+		        <li><a href="#">发现 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">经验</a></li>
+		        <li><a href="#">问帮</a></li>
+		        <li><a href="#">赛事</a></li>
+		        <li><a href="#">招聘</a></li>
+		       
+		      </ul> 		      
+		    </div><!-- /.navbar-collapse end-->
+		  </div><!-- /.container end-->
+	</nav><!--/.nav end-->
+	
+	
+		<!--login-content start-->
+		<div class='container login-content'>
+			<div class='row'> 
+				
+					<div class='col-xs-12 col-md-8 login-content-left'><!--left start-->
+					<form action=''>
+						 <div class="login-input-group">
+								<div class="login-content-title"><!--login-content-title-->
+								 <h2>欢迎回来</h2><span>还没有账号？<a href=''>立即注册</a></span>
+								</div><!--/login-content-title-->
+						
+								<div class="input-group login-input-pt "><!--username input-->
+								  <span class="input-group-addon glyphicon glyphicon-user login-input-addon" id="basic-addon1"></span>
+								  <input type="text" class='login-input' id="username" placeholder="请输入手机/邮箱" aria-describedby="basic-addon1" >
+								 <span class='login-error error1'></span>
+								</div><!--/username input-->
+								
+						</div>
+							
+						
+								<div class="input-group login-input-pt login-input-group"><!--password input-->
+								  <span class="input-group-addon glyphicon glyphicon-lock login-input-addon" id="basic-addon1"></span>
+								  <input type="pasword" class='login-input' id='password' placeholder="请输入密码" aria-describedby="basic-addon1">
+								 <span class='login-error error2'></span>
+								</div><!--/password input-->
+								
+						
+						
+						<button  class='btn btn-info login-btn' id='login_btn'>登录</button>
+				
+					</form>
+					</div><!--left end-->
+				
+
+				<div class='col-xs-12 col-md-4 login-content-right'><!--right start-->
+				<h2>第三方登录</h2>
+				<ul class="list-group login-third-party">
+				  <li class="list-group-item"><a href=''><img src='images/qq.png' /></a></li>
+				  <li class="list-group-item"><a href=''><img src='images/sina.png' /></a></li>
+				  <li class="list-group-item"><a href=''><img src='images/epub.png' /></a></li>
+				  
+				</ul>
+				</div><!--right end-->
+				
+			</div>
+		</div><!--login content end-->
+		
+		<div class='container-fluid login-footer'><!--footer start-->
+			<p>深圳市中兴云服务有限公司版权所有 ©2006-2014 粤ICP备10201442-1号</p>
+		</div><!--footer end-->
+
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	<script type="text/javascript" src='js/JsLogin.js'></script>
+			
+</body>
+</html>
